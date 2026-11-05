@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janine Ponce | AI Automation & Entrepreneurship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f8fa;--surface:#fff;--ink:#12263a;--muted:#51657a;--line:#d7e1e9;--brand:#1f6f8b;--brand-ink:#fff;--gold:#c98a12;--hero:#12263a;--hero-ink:#f2f7fa;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1822;--surface:#13242f;--ink:#e8f0f5;--muted:#9fb3c2;--line:#25394a;--brand:#5bb5d1;--brand-ink:#08202b;--gold:#e5ad3f;--hero:#091219;--hero-ink:#eaf2f6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1822;--surface:#13242f;--ink:#e8f0f5;--muted:#9fb3c2;--line:#25394a;--brand:#5bb5d1;--brand-ink:#08202b;--gold:#e5ad3f;--hero:#091219;--hero-ink:#eaf2f6;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav ul a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
+nav ul a:hover{color:var(--brand)}
+.hero{background:var(--hero);color:var(--hero-ink);padding:88px 0 80px}
+.hero h1{font-size:clamp(38px,6vw,64px);max-width:15ch}
+.hero p{max-width:56ch;font-size:19px;color:color-mix(in srgb,var(--hero-ink) 82%,transparent);margin:22px 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;font-weight:600;text-decoration:none;background:var(--gold);color:#1b1405}
+.btn.ghost{background:transparent;color:var(--hero-ink);border:1px solid color-mix(in srgb,var(--hero-ink) 40%,transparent)}
+section{padding:72px 0}
+section:nth-of-type(even){background:var(--surface);border-block:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,38px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 36px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 16px}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;align-self:start}
+section:nth-of-type(even) .facts{background:var(--bg)}
+.facts dt{font-weight:600;margin-top:14px}.facts dt:first-child{margin-top:0}
+.facts dd{margin:2px 0 0;color:var(--muted)}
+ol.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+ol.timeline li{position:relative;padding:0 0 28px 22px}
+ol.timeline li::before{content:"";position:absolute;left:-30px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+section:nth-of-type(even) ol.timeline li::before{border-color:var(--surface)}
+.timeline time{font-weight:600;color:var(--brand)}
+.timeline h3{font-size:19px;margin:2px 0 4px}
+.timeline p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
+section:nth-of-type(even) .card{background:var(--bg)}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted)}
+.levels{display:grid;gap:14px;max-width:640px}
+.lv{display:grid;grid-template-columns:180px 1fr 90px;gap:14px;align-items:center}
+.bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--brand)}
+.lv span:last-child{color:var(--muted);font-size:15px}
+.links{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.tags{margin-top:16px;color:var(--muted);font-size:15px}
+.quote{border-left:4px solid var(--gold);padding:4px 0 4px 20px;margin:40px 0 0;font:500 22px/1.45 Fraunces,Georgia,serif;max-width:46ch}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact address{font-style:normal}
+.contact p{margin:0 0 10px}
+.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.social a{padding:8px 16px;border:1px solid var(--line);border-radius:6px;text-decoration:none;font-weight:500}
+footer{padding:32px 0;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+@media (max-width:760px){.about,.contact{grid-template-columns:1fr;gap:28px}.lv{grid-template-columns:1fr 70px}.lv .bar{grid-column:1/-1;order:3}section{padding:56px 0}.hero{padding:64px 0 56px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#top">Janine Ponce</a>
+<ul><li><a href="#about">About</a></li><li><a href="#journey">Journey</a></li><li><a href="#services">Services</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#goals">Goals</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<h1>Hello, I’m Janine.</h1>
+<p>A hardworking professional exploring technology, AI automation, and entrepreneurship. I’m passionate about learning new skills, creating opportunities, and building a better future for myself and my family.</p>
+<div class="btns"><a class="btn" href="#contact">Get in touch</a><a class="btn ghost" href="#projects">View my projects</a></div>
+</div></div>
+
+<section id="about"><div class="wrap about">
+<div>
+<h2>About me</h2>
+<p>I grew up in a farming family where every peso mattered. I paused college to help support my younger siblings’ education, returned to finish my Bachelor of Science in Information Technology, and later built a career across auditing, quality control, and manufacturing.</p>
+<p>Since 2019 I have worked in Taiwan as an overseas Filipino worker. Alongside my job, I study AI automation through online learning and training programs, and I plan to enroll in a school in Taiwan next year to deepen those skills.</p>
+<p>My story is not about having everything from the beginning. It is about starting with almost nothing and choosing to move forward.</p>
+</div>
+<dl class="facts">
+<dt>Education</dt><dd>BS in Information Technology; Associate in Computer</dd>
+<dt>Experience</dt><dd>Internal auditing, quality control, factory operations</dd>
+<dt>Focus</dt><dd>AI automation, chatbots, digital content, small business</dd>
+<dt>Languages</dt><dd>Filipino, English, learning Mandarin</dd>
+<dt>Based in</dt><dd>Taiwan</dd>
+</dl>
+</div></section>
+
+<section id="journey"><div class="wrap">
+<h2>My journey</h2>
+<p class="lead">A short timeline of the steps that shaped me. Each one built the discipline I bring to my work today.</p>
+<ol class="timeline">
+<li><time>College</time><h3>Studied, then paused to support my family</h3><p>Finished an Associate in Computer so I could start working and help my two younger siblings stay in school.</p></li>
+<li><time>First jobs</time><h3>Cebu Mitsumi, Dewfoam, Monde Nissin</h3><p>Worked in electronics manufacturing, then as an Internal Auditor, then as a Quality Controller. Returned to school and completed my BS in Information Technology.</p></li>
+<li><time>November 2019</time><h3>Became an OFW in Taiwan</h3><p>Faced difficult working conditions, reported them to the labor authorities, and started over with a new employer.</p></li>
+<li><time>December 2020</time><h3>Moved into a factory role</h3><p>Passed the hiring exam (7 of 58+ applicants) and transferred to a factory position, where I continue to work today.</p></li>
+<li><time>Today</time><h3>Learning AI automation</h3><p>Studying through training programs and online courses while building projects in content, business planning, and automation.</p></li>
+<li><time>Next year</time><h3>Enrolling in school in Taiwan</h3><p>To apply and grow what I have learned in AI automation.</p></li>
+</ol>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>How I can help</h2>
+<p class="lead">Areas where I am building real, practical experience.</p>
+<div class="grid">
+<div class="card"><h3>AI automation</h3><p>Using AI tools to save time on repetitive tasks and improve everyday business processes.</p></div>
+<div class="card"><h3>Chatbot solutions</h3><p>Designing practical chatbots that answer common customer questions.</p></div>
+<div class="card"><h3>Digital content</h3><p>AI-assisted images, short video concepts, and social media content with a consistent look.</p></div>
+<div class="card"><h3>Business planning</h3><p>Budgets, presentations, and marketing ideas for small business concepts.</p></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<p class="lead">Skills are something we keep developing. I show levels honestly instead of percentages.</p>
+<div class="levels">
+<div class="lv"><span>Communication</span><div class="bar"><i style="width:85%"></i></div><span>Strong</span></div>
+<div class="lv"><span>Teamwork</span><div class="bar"><i style="width:85%"></i></div><span>Strong</span></div>
+<div class="lv"><span>Time management</span><div class="bar"><i style="width:85%"></i></div><span>Strong</span></div>
+<div class="lv"><span>AI tools</span><div class="bar"><i style="width:55%"></i></div><span>Developing</span></div>
+<div class="lv"><span>Entrepreneurship</span><div class="bar"><i style="width:55%"></i></div><span>Developing</span></div>
+</div>
+<h3 style="margin:48px 0 20px">Personal strengths</h3>
+<div class="grid">
+<div class="card"><h3>Hardworking</h3><p>Consistent effort and dedication turn goals into achievements.</p></div>
+<div class="card"><h3>Fast learner</h3><p>I pick up new tools quickly through practice.</p></div>
+<div class="card"><h3>Goal-oriented</h3><p>I work toward my goals one step at a time.</p></div>
+<div class="card"><h3>Continuous learner</h3><p>Every experience is an opportunity to grow.</p></div>
+<div class="card"><h3>Self-motivated</h3><p>I take initiative and create opportunities for myself.</p></div>
+</div>
+<p class="quote">“I may still be learning, but I am willing to learn.”</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<p class="lead">Work samples across creative content and business planning.</p>
+<div class="grid">
+<div class="card"><h3>Digital content and creative</h3><p>AI-generated content, visual design, storytelling, and digital media.</p>
+<ul class="links">
+<li><a href="https://www.facebook.com/profile.php?id=61594113894034" target="_blank" rel="noopener">AI video and storytelling concepts</a></li>
+<li><a href="https://drive.google.com/drive/folders/1GJ3Y_oSj3lcRcuIJXJcNKDxS4SZS6hhx" target="_blank" rel="noopener">AI image generation</a></li>
+<li><a href="https://www.facebook.com/profile.php?id=61577039940071" target="_blank" rel="noopener">Social media content</a></li>
+</ul>
+<p class="tags">AI tools, content creation, visual design, storytelling, personal branding</p></div>
+<div class="card"><h3>Personal branding</h3><p>Documents and templates I built with Google Workspace and Canva.</p>
+<ul class="links">
+<li><a href="https://docs.google.com/document/d/1lD_DuSSMeC1wnudefUL8t8wH-h0mVIo0K11acA_9cZM/edit?tab=t.0" target="_blank" rel="noopener">Resume (Google Docs)</a></li>
+<li><a href="https://drive.google.com/drive/folders/1GdaPgzVrLsWTbErj_mFnvwLPTO-vlUiF" target="_blank" rel="noopener">Name card (Canva)</a></li>
+<li><a href="https://docs.google.com/document/d/134KiCJMTgZKKfm24kObFtfPfP5WipEXwwDYwEoFXfe0/edit?tab=t.0" target="_blank" rel="noopener">Documenting how AI works</a></li>
+<li><a href="https://docs.google.com/presentation/d/13FIF9mihJAaTzYoCxICPglnzIVTAGMVLvO94NT9PNBg/edit?slide=id.p#slide=id.p" target="_blank" rel="noopener">Business presentation (Slides)</a></li>
+<li><a href="https://docs.google.com/forms/d/1cFfrEgKE3FeWKtm4sVMh6H9qgsn7naOfTQPilNxwPoI/edit" target="_blank" rel="noopener">Google Form sample</a></li>
+</ul></div>
+<div class="card"><h3>Entrepreneurship and business</h3><p>Developing and testing business ideas.</p>
+<ul class="links">
+<li><a href="https://docs.google.com/presentation/d/1tLfdh9zfOT7LVq56fVzuZJccLgNpRo_72__cQXqk-mE/edit?slide=id.p#slide=id.p" target="_blank" rel="noopener">Milk tea business concept</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1nvJ_JigRrE95-fkql25cmH2Nt7aazCDicvd_TCJ1b-E/edit?gid=0#gid=0" target="_blank" rel="noopener">Business planning and budgeting</a></li>
+<li><a href="https://docs.google.com/presentation/d/1tLfdh9zfOT7LVq56fVzuZJccLgNpRo_72__cQXqk-mE/edit?slide=id.g3f5b109cad3_0_16#slide=id.g3f5b109cad3_0_16" target="_blank" rel="noopener">Marketing and promotion ideas</a></li>
+</ul>
+<p class="tags">Business planning, budgeting, marketing, product development</p></div>
+</div>
+</div></section>
+
+<section id="goals"><div class="wrap">
+<h2>Goals</h2>
+<p class="lead">Learn, build, grow, create, inspire.</p>
+<div class="grid">
+<div class="card"><h3>Continuous learning</h3><p>Keep improving in technology, web development, AI, and automation.</p></div>
+<div class="card"><h3>Build technology skills</h3><p>Build useful web applications, learn more about AI automation, and create practical chatbot solutions.</p></div>
+<div class="card"><h3>Become an AI automation professional</h3><p>Help businesses save time, improve processes, and serve customers better.</p></div>
+<div class="card"><h3>Build a flexible career</h3><p>Combine my work experience with growing digital skills for balance and growth.</p></div>
+<div class="card"><h3>Build my own business</h3><p>Turn ideas into sustainable income across food, technology, and digital services.</p></div>
+<div class="card"><h3>Create a better future</h3><p>Build a secure and meaningful future for myself and my family.</p></div>
+</div>
+<p class="quote">“I want to keep learning, keep building, and keep creating new opportunities for tomorrow.”</p>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><h2>Let’s connect</h2>
+<p>Have a question, an opportunity, or an idea? I’d be happy to talk about a project, technology, AI automation, or business ideas.</p></div>
+<address>
+<p><strong>Email</strong><br><a href="mailto:janineponce38@gmail.com">janineponce38@gmail.com</a></p>
+<p><strong>Phone</strong><br><a href="tel:+639243759012">+63 924 375 9012</a></p>
+<div class="social">
+<a href="https://www.linkedin.com/in/janine-ponce/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://www.facebook.com/jhavia.kendra" target="_blank" rel="noopener">Facebook</a>
+<a href="https://www.instagram.com/jaineponce6/" target="_blank" rel="noopener">Instagram</a>
+<a href="https://www.tiktok.com/@janineponce32" target="_blank" rel="noopener">TikTok</a>
+</div></address>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Janine Ponce. All rights reserved.</div></footer>
+</body>
+</html>
